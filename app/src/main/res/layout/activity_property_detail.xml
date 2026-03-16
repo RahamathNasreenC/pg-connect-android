@@ -1,0 +1,173 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Back Button -->
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Property Image (swapped with bed size) -->
+        <ImageView
+            android:id="@+id/imgPropertyDetail"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:background="#DDDDDD" />
+
+        <!-- PG Name -->
+        <TextView
+            android:id="@+id/txtPgName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KrishBrinda"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="#2563EB"/>
+
+        <!-- Location Row -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imgLocationIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_location_on_24"
+                android:contentDescription="Location Icon"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/txtLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saravanampatti"
+                android:textSize="16sp"
+                android:textColor="#2563EB"/>
+        </LinearLayout>
+
+        <!-- Rent -->
+        <TextView
+            android:id="@+id/txtRent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs.7000/mn"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#2563EB"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Available Rooms -->
+        <TextView
+            android:id="@+id/txtRooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Rooms: 10"
+            android:textSize="16sp"
+            android:textColor="#2563EB"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PG description here..."
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Contact Number -->
+        <TextView
+            android:id="@+id/txtContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact: 9876543210"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#2563EB"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Bed Type Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bed Type"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#2563EB"/>
+
+        <!-- Room Type Text from Admin -->
+        <TextView
+            android:id="@+id/txtRoomType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#2563EB"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Bed Image (swapped with property image size) -->
+        <ImageView
+            android:id="@+id/imgBedType"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:layout_gravity=""
+            android:background="#DDDDDD"/>
+
+        <!-- Amenities Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amenities"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#2563EB"/>
+
+        <!-- Amenities Section -->
+        <LinearLayout
+            android:id="@+id/layoutAmenities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Book Now Button -->
+        <Button
+            android:id="@+id/btnBookNow"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Book Now"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="#2563EB"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <!-- PG IMAGE -->
+        <ImageView
+            android:id="@+id/imgPg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:id="@+id/txtPgName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PG Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="16sp"
+            android:textColor="#444"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/txtRent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rent"
+            android:textSize="16sp"
+            android:textColor="#444"
+            android:layout_marginTop="4dp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:layout_marginTop="20dp"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edtMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Mobile"
+            android:layout_marginTop="10dp"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/btnChooseFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload ID Proof (PDF/Word)"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/txtFileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No file selected"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"/>
+
+        <Button
+            android:id="@+id/btnSubmitBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Booking"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

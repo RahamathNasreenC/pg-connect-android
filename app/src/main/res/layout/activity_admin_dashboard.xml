@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <!-- Premium Header Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_marginBottom="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="18dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/admin_image"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#2563EB"/>
+
+                <!-- Logout Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogout"
+                    android:layout_width="110dp"
+                    android:layout_height="42dp"
+                    android:text="Logout"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="#EF4444"
+                    android:elevation="8dp"/>
+
+                <!-- Admin Text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imgProfile"
+                    android:layout_toStartOf="@id/btnLogout"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admin Dashboard"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#111827"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Manage properties &amp; bookings"
+                        android:textSize="13sp"
+                        android:textColor="#6B7280"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Section Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quick Actions"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Action Buttons Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Add Property -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAddProperty"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Add a New Property"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    app:cornerRadius="18dp"
+                    app:backgroundTint="#2563EB"
+                    android:elevation="10dp"
+                    android:layout_marginBottom="16dp"
+                    app:rippleColor="#93C5FD"
+                    app:icon="@drawable/ic_baseline_post_add_24"
+                    app:iconTint="#FFFFFF"
+                    app:iconPadding="10dp"
+                    app:iconGravity="textStart"/>
+
+                <!-- Delete Property -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDeleteProperty"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Delete a Property"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    app:cornerRadius="18dp"
+                    app:backgroundTint="#2563EB"
+                    android:elevation="10dp"
+                    android:layout_marginBottom="16dp"
+                    app:rippleColor="#93C5FD"
+                    app:icon="@drawable/ic_baseline_delete_forever_24"
+                    app:iconTint="#FFFFFF"
+                    app:iconPadding="10dp"
+                    app:iconGravity="textStart"/>
+
+                <!-- Booking Requests -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBookingRequests"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="User Booking Requests"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    app:cornerRadius="18dp"
+                    app:backgroundTint="#2563EB"
+                    android:elevation="10dp"
+                    app:rippleColor="#93C5FD"
+                    app:icon="@drawable/ic_baseline_bookmark_add_24"
+                    app:iconTint="#FFFFFF"
+                    app:iconPadding="10dp"
+                    app:iconGravity="textStart"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Footer Note -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tip: Keep your listings updated to attract more users."
+            android:textSize="13sp"
+            android:textColor="#6B7280"
+            android:gravity="center"
+            android:layout_marginTop="22dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

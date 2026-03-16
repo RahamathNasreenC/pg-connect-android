@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:layout_marginBottom="10dp"
+    android:background="#F3F3F3">
+
+    <!-- PG Name -->
+    <TextView
+        android:id="@+id/txtPgName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PG Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="80dp"/>
+
+    <!-- Cancel Button -->
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✕ Cancel"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:background="#FF3B30"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:gravity="center"/>
+
+    <!-- Location -->
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="14sp"
+        android:textColor="#333"
+        android:layout_below="@id/txtPgName"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="3dp"/>
+
+    <!-- Rent -->
+    <TextView
+        android:id="@+id/txtRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rent"
+        android:textSize="14sp"
+        android:textColor="#333"
+        android:layout_below="@id/txtLocation"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="3dp"/>
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_below="@id/txtRent"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>

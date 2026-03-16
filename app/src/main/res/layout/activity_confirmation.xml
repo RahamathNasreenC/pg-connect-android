@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Top Image -->
+    <ImageView
+        android:id="@+id/imgSuccess"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/img"
+        android:contentDescription="Success Image"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerInside"
+        android:clipToOutline="true"
+        android:outlineProvider="background" />
+
+    <!-- Success Message -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Request Sent Successfully!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#2563EB"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Redirecting Message -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redirecting..."
+        android:textSize="16sp"
+        android:textColor="#2563EB"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+</LinearLayout>

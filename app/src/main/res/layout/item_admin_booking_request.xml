@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/box_bg">
+
+    <TextView
+        android:id="@+id/txtPgName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PG:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:textSize="14sp"
+        android:textColor="#333" />
+
+    <TextView
+        android:id="@+id/txtRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rent:"
+        android:textSize="14sp"
+        android:textColor="#333" />
+
+    <TextView
+        android:id="@+id/txtUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Email:"
+        android:textSize="14sp"
+        android:textColor="#333" />
+
+    <TextView
+        android:id="@+id/txtMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile:"
+        android:textSize="14sp"
+        android:textColor="#333" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/btnViewIdProof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View ID Proof"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#000000"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Approve Reject Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnApprove"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Approve"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#008000"
+            android:layout_marginEnd="6dp"/>
+
+        <Button
+            android:id="@+id/btnReject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reject"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF0000"
+            android:layout_marginStart="6dp"/>
+    </LinearLayout>
+
+    <!-- DELETE BUTTON MUST BE HERE -->
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Request"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#444444"
+        android:layout_marginTop="8dp"/>
+
+
+</LinearLayout>
